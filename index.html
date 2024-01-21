@@ -131,18 +131,18 @@
                 </div>
             </div>
 
-           <div class="footer">
-            <div class="line"></div>
-           </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
 
         </div>
         <div class="music-player">
             <div class="album">
-                   <div class="recent">
+                <div class="recent">
                     <img src="./assets/card2img.jpeg" alt="">
                     <p>Perfect : Beautiful Song</p>
                     <i class="fa-regular fa-heart"></i>
-                   </div>
+                </div>
 
 
             </div>
@@ -150,7 +150,8 @@
                 <div class="player-controls">
                     <img src="./assets/player_icon1.png" alt="" class="player-control-icon">
                     <img src="./assets/player_icon2.png" alt="" class="player-control-icon">
-                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon" style="opacity: 1; height: 2rem;;">
+                    <img id="pause-img" onclick="changeImage()" src="./assets/player_icon3.png" alt="" class="player-control-icon"
+                    style="opacity: 1; height: 2rem; cursor: pointer;">               
                     <img src="./assets/player_icon4.png" alt="" class="player-control-icon">
                     <img src="./assets/player_icon5.png" alt="" class="player-control-icon">
                 </div>
@@ -165,9 +166,17 @@
                 <i class="fa-solid fa-volume-xmark"></i>
                 <i class="fa-solid fa-volume-high" style="opacity: 0.85;"></i>
                 <input type="range" min="0" max="100" style="opacity: 0.85;">
-                <i  class="fa-brands fa-spotify" style="opacity: 1;" ></i>
+
+                <!-- Spotify icon with a link to open Spotify -->
+                <a id="spotifyLink" href="https://open.spotify.com/" target="_blank">
+                    <i class="fab fa-spotify" style="opacity: 1;"></i>
+                </a>
+
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
